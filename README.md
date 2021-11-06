@@ -1,6 +1,6 @@
 # Tonic Test repo
 
-This repo can be used to reproduce a curious problem with tonic:
+This repo can be used to reproduce a curious [problem](https://github.com/hyperium/tonic/issues/831) with tonic:
 
 When starting a server with *both* TLS and `serve_with_incoming`, clients will hang when performing RPC calls.
 
