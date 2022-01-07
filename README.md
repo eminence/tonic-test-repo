@@ -1,5 +1,7 @@
 # Tonic Test repo
 
+> **Update**: This problem happens because there was a missing call to `set_nonblocking(true)` on the server socket.  Not a tonic problem.
+
 This repo can be used to reproduce a curious [problem](https://github.com/hyperium/tonic/issues/831) with tonic:
 
 When starting a server with *both* TLS and `serve_with_incoming`, clients will hang when performing RPC calls.
